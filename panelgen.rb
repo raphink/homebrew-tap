@@ -11,7 +11,7 @@ class Panelgen < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/raphink/panelgen/releases/download/v1.3.1/panelgen_1.3.1_darwin_amd64.tar.gz"
-      sha256 "754ac0d97c8cd6d9789a044bdecf959b180926a9e0c73973a6ec21794931438e"
+      sha256 "0623573b5df94e1bad7644fa537116442d89419820c8fdcfc0f802f874639368"
 
       define_method(:install) do
         bin.install "panelgen"
@@ -19,7 +19,7 @@ class Panelgen < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/raphink/panelgen/releases/download/v1.3.1/panelgen_1.3.1_darwin_arm64.tar.gz"
-      sha256 "b7bc8f5ee3354d76d8469196e899093e0f283ecfc893756c67402aca3da5b3b2"
+      sha256 "baeb56eb1512d9b3b8811557f6a433316f7d1904d69f44b89b2e39eba4ff582f"
 
       define_method(:install) do
         bin.install "panelgen"
@@ -30,14 +30,14 @@ class Panelgen < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/raphink/panelgen/releases/download/v1.3.1/panelgen_1.3.1_linux_amd64.tar.gz"
-      sha256 "473aa621a857a4ba18a8feba0a5ea1c14f098491f09ac04b290454dcd2732849"
+      sha256 "d0c65bf1864a877a510d9faeb49ed12354613ce8f30405722e1b73762b814df6"
       define_method(:install) do
         bin.install "panelgen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/raphink/panelgen/releases/download/v1.3.1/panelgen_1.3.1_linux_arm64.tar.gz"
-      sha256 "8bb1b0b2259f6dc550b039cc2185bb5588a6700a08f447e3ba9d666ce75945c1"
+      sha256 "4c17c4ab8e6576acf88ab763634ceda261a92e65f1973c2ddd7212c414f74f37"
       define_method(:install) do
         bin.install "panelgen"
       end
