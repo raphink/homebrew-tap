@@ -5,21 +5,21 @@
 class Panelgen < Formula
   desc "AI image series generator for comics and carousels"
   homepage "https://github.com/raphink/panelgen"
-  version "0.3.0"
+  version "0.3.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/raphink/panelgen/releases/download/v0.3.0/panelgen_0.3.0_darwin_amd64.tar.gz"
-      sha256 "62fc65e14c3095cfa38a4d15b5a12c50cd45cf7191ebaa323f4d10572648ccc7"
+      url "https://github.com/raphink/panelgen/releases/download/v0.3.1/panelgen_0.3.1_darwin_amd64.tar.gz"
+      sha256 "5a5ad90e8be59853b433a4dbae5c64ea75dc64c427e1257b8df58b4c09dc2bbc"
 
       define_method(:install) do
         bin.install "panelgen"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/raphink/panelgen/releases/download/v0.3.0/panelgen_0.3.0_darwin_arm64.tar.gz"
-      sha256 "100d1a452dff405641e1927a1b6222009e75d91f104cb916c1ab7d3f859b431e"
+      url "https://github.com/raphink/panelgen/releases/download/v0.3.1/panelgen_0.3.1_darwin_arm64.tar.gz"
+      sha256 "947b6000dc2261cd4b59fe367bbeac05dfd6e8300657894cc8b56ef0e6577054"
 
       define_method(:install) do
         bin.install "panelgen"
@@ -29,15 +29,15 @@ class Panelgen < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raphink/panelgen/releases/download/v0.3.0/panelgen_0.3.0_linux_amd64.tar.gz"
-      sha256 "c4e853ddb5a627cf2ecbb88817e6a4308e75ccfa5537c88e8cf40b7191600d87"
+      url "https://github.com/raphink/panelgen/releases/download/v0.3.1/panelgen_0.3.1_linux_amd64.tar.gz"
+      sha256 "cfe4c63afc33e2fd384efb6b90ac0703cc1ade328df7d022e42a0fd754c22aba"
       define_method(:install) do
         bin.install "panelgen"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/raphink/panelgen/releases/download/v0.3.0/panelgen_0.3.0_linux_arm64.tar.gz"
-      sha256 "016d72f2417e7dce9afbf68f0c04882efa49a67fa48e7eda43c87a054a51b667"
+      url "https://github.com/raphink/panelgen/releases/download/v0.3.1/panelgen_0.3.1_linux_arm64.tar.gz"
+      sha256 "80bfd94d1aeafd4dd0df31d8da7cfde86936b05aea52074743b6243874077dee"
       define_method(:install) do
         bin.install "panelgen"
       end
